@@ -48,8 +48,6 @@
 /*.sim
 
 ### block design
-*/*/bd/*/hdl
-*/*/*/bd/*/hdl
 
 */*/bd/*/*.xdc
 */*/*/bd/*/*.xdc
