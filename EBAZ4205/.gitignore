@@ -45,6 +45,7 @@
 .jobs
 
 /*.runs
+/*.sim
 
 ### block design
 */*/bd/*/hdl
@@ -73,3 +74,6 @@
 */*/*/bd/*/ip/*/*.tcl
 hw_handoff
 ipshared
+
+**/ip/*/*
+!**/ip/*/*.xci
