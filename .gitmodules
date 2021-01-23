@@ -1,0 +1,6 @@
+[submodule "petalinux/u-boot-xlnx"]
+	path = petalinux/u-boot-xlnx
+	url = https://github.com/gameltb/u-boot-xlnx
+[submodule "petalinux/linux-xlnx"]
+	path = petalinux/linux-xlnx
+	url = https://github.com/gameltb/linux-xlnx
