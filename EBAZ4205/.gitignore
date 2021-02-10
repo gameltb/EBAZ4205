@@ -75,3 +75,5 @@ ipshared
 
 **/ip/*/*
 !**/ip/*/*.xci
+
+*.xsa

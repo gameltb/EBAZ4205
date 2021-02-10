@@ -1,8 +1,8 @@
-//Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Tue Jan 14 15:59:08 2020
-//Host        : ltb-Standard-PC-Q35-ICH9-2009 running 64-bit Ubuntu 18.04.3 LTS
+//Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+//Date        : Sat Feb  6 22:16:09 2021
+//Host        : Arch running 64-bit unknown
 //Command     : generate_target EBAZ4205_wrapper.bd
 //Design      : EBAZ4205_wrapper
 //Purpose     : IP block netlist
@@ -37,6 +37,9 @@ module EBAZ4205_wrapper
     FIXED_IO_0_ps_clk,
     FIXED_IO_0_ps_porb,
     FIXED_IO_0_ps_srstb,
+    GPIO,
+    LED_G,
+    LED_R,
     MDIO_ETHERNET_0_0_mdc,
     MDIO_ETHERNET_0_0_mdio_io);
   inout [14:0]DDR_0_addr;
@@ -66,6 +69,9 @@ module EBAZ4205_wrapper
   inout FIXED_IO_0_ps_clk;
   inout FIXED_IO_0_ps_porb;
   inout FIXED_IO_0_ps_srstb;
+  output [3:0]GPIO;
+  output LED_G;
+  output LED_R;
   output MDIO_ETHERNET_0_0_mdc;
   inout MDIO_ETHERNET_0_0_mdio_io;
 
@@ -96,6 +102,9 @@ module EBAZ4205_wrapper
   wire FIXED_IO_0_ps_clk;
   wire FIXED_IO_0_ps_porb;
   wire FIXED_IO_0_ps_srstb;
+  wire [3:0]GPIO;
+  wire LED_G;
+  wire LED_R;
   wire MDIO_ETHERNET_0_0_mdc;
   wire MDIO_ETHERNET_0_0_mdio_i;
   wire MDIO_ETHERNET_0_0_mdio_io;
@@ -130,6 +139,9 @@ module EBAZ4205_wrapper
         .FIXED_IO_0_ps_clk(FIXED_IO_0_ps_clk),
         .FIXED_IO_0_ps_porb(FIXED_IO_0_ps_porb),
         .FIXED_IO_0_ps_srstb(FIXED_IO_0_ps_srstb),
+        .GPIO(GPIO),
+        .LED_G(LED_G),
+        .LED_R(LED_R),
         .MDIO_ETHERNET_0_0_mdc(MDIO_ETHERNET_0_0_mdc),
         .MDIO_ETHERNET_0_0_mdio_i(MDIO_ETHERNET_0_0_mdio_i),
         .MDIO_ETHERNET_0_0_mdio_o(MDIO_ETHERNET_0_0_mdio_o),
